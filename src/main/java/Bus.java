@@ -1,11 +1,8 @@
 public class Bus extends Vehicle {
-    private int parkingRate;
+    protected Rates rate;
 
-    public Bus(String numberPlate, String typeOfVehicle, int yearOfManuf, TIme startingTime, int parkingCost) {
-        super(numberPlate, typeOfVehicle, yearOfManuf, startingTime, parkingCost);
-    }
-
-    public final int getParkingRate() {
-        return parkingRate = 1000;
+    public Bus(String numberPlate, String typeOfVehicle, int yearOfManuf, int money, int travelCard, Rates BUS) {
+        super(numberPlate, typeOfVehicle, yearOfManuf, money, travelCard);
+        this.rate = BUS;
     }
 }

@@ -1,18 +1,18 @@
 import java.io.IOException;
 
 
-public class TIme {
+public class Time {
 
     private int hour;
     private int minute;
 
-    public TIme() {
+    public Time() {
         hour = 12;
         minute = 0;
     }
 
 
-    public TIme(int h, int m) {
+    public Time(int h, int m) {
         if (h >= 1 && h <= 23) {
             hour = h;
         } else {

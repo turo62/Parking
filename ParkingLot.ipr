@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ParkingLot" target="1.5" />
+      <module name="ParkingLot" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="Encoding" addBOMForNewFiles="with NO BOM" />
@@ -237,10 +237,11 @@
       <module fileurl="file://$PROJECT_DIR$/ParkingLot.iml" filepath="$PROJECT_DIR$/ParkingLot.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" project-jdk-name="10.0.2+13 (2)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>

@@ -1,11 +1,9 @@
 public class Truck extends Vehicle {
-    private int parkingRate;
+    protected Rates rate;
 
-    public Truck(String numberPlate, String typeOfVehicle, int yearOfManuf, TIme startingTime, int parkingCost) {
-        super(numberPlate, typeOfVehicle, yearOfManuf, startingTime, parkingCost);
+    public Truck(String numberPlate, String typeOfVehicle, int yearOfManuf, int money, int travelCard, Rates TRUCK) {
+        super(numberPlate, typeOfVehicle, yearOfManuf, money, travelCard);
+        this.rate = TRUCK;
     }
 
-    public final int getParkingRate() {
-        return parkingRate = 2000;
-    }
 }
