@@ -2,30 +2,26 @@ public class Vehicle {
     private String numberPlate;
     private String typeOfVehicle;
     private int yearOfManuf;
-    protected Rates rate;
     private int money;
-    private int travelCard;
-
+    private int travelCard = 0;
+    private int hours;
+    private int value;
+    
     public Vehicle(String numberPlate, String typeOfVehicle, int yearOfManuf, int money, int travelCard){
         this.numberPlate = numberPlate;
         this.typeOfVehicle = typeOfVehicle;
         this.yearOfManuf = yearOfManuf;
-        this.rate = rate;
         this.money = money;
         this.travelCard = travelCard;
     }
     
     
     public void setMoney(int money) {
-        this.money += money;
+        this.money -= money;
     }
     
     public void setTravelCard(int hours) {
-        if (ParkPlace.getMinimumTravelCardHours() >= hours) {
-            if (money >= hours * rate.getValue()) {
-                money -= hours * rate.getValue();
-            }
-        }
+        this.travelCard += hours;
     }
     
     public String getNumberPlate() {
@@ -46,5 +42,24 @@ public class Vehicle {
     
     public int getTravelCard() {
         return travelCard;
+    }
+    
+    public int getHours() {
+        return hours;
+    }
+    
+    public int getValue() {
+        return value;
+    }
+    
+    public int travelCardValue(Vehicle v) {
+        if(v instanceof Car) {
+            this.value = 500;
+        } else if (v instanceof Bus) {
+            this.value = 1000;
+        } else if (v instanceof Truck) {
+            this.value = 2000;
+        }
+        return value;
     }
 }
